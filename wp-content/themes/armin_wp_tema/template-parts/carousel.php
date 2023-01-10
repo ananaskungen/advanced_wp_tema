@@ -1,32 +1,36 @@
-
-<h1><?php bloginfo( 'name' ); ?></h1>
-<h2><?php bloginfo( 'description' ); ?></h2>
-
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-<h3><?php the_title(); ?></h3>
-
-<?php
- the_content();
- wp_link_pages(); 
- edit_post_link(); 
-
- endwhile; 
+<div class="cta-text-section">
+    <h1>Latest</h1>
+    <a class="cta_archive_link" href="/archive">See All</a>
+</div>
 
 
-if ( get_next_posts_link() ) {
-next_posts_link();
-}
+<?php 
 
+/* Shows only the 3 latest posts for the "category Latest" */
+query_posts( [ 
+    'category_name' => 'latest',
+   'posts_per_page' => 3,
+]); 
 
-if ( get_previous_posts_link() ) {
-previous_posts_link();
-}
+/* We check if there are any posts, and if there are.. we display them */
 
- else  
-    _e('Sorry, no pages matched your critieria', 'textdomain');
-
+if ( have_posts() ) {
 ?>
-<p>No posts found. :(</p>
-
-<?php endif; ?>
+<div class="post_section"> 
+    <?php 
+    while ( have_posts() ) : the_post(); 
+    ?>  
+    <div class="card">
+        <?php 
+            if ( has_post_thumbnail() ) { 
+            the_post_thumbnail('large', [ 'class' => 'latest_post_thumbnail' ]); 
+            }
+            the_excerpt();
+        ?>
+        <a class="read_more_link" href="<?php the_permalink(); ?>"><h2 class="read_more_card">Read More</h2></a>
+    </div>
+    <?php
+    endwhile; 
+} 
+?>
+</div>

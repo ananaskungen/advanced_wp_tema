@@ -1,0 +1,45 @@
+
+
+.zoom-instagram.feed-55 .zoom-instagram-widget__items {
+    display: grid!important;
+    grid-template-columns: repeat(1,1fr) !important;
+    
+}
+
+.zoom-instagram.feed-55 {
+    font-size: 14px!important;
+    padding: 1px!important;
+    margin: 3rem !important;
+}
+
+.zoom-instagram.feed-55 .zoom-instagram-widget__items {
+    gap: 10px!important;
+    margin-top: 10rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .zoom-instagram.feed-55 .zoom-instagram-widget__items {
+        display: grid!important;
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1440px) {
+    .zoom-instagram.feed-55 .zoom-instagram-widget__items {
+        display: grid!important;
+        grid-template-columns: repeat(3,1fr) !important;
+    }
+
+}
+
+
+
+
+
+

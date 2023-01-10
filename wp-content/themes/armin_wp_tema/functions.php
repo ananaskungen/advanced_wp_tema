@@ -30,6 +30,9 @@ if ( ! function_exists( 'armins_advanced_theme' ) ) :
 		 * Enable support for post thumbnails and featured images.
 		 */
 		add_theme_support( 'post-thumbnails' );
+		add_image_size( 'post-thumbnails', 1920, 800 );
+
+		add_theme_support( 'widgets' );
 
 		/**
 		 * Add support for two custom navigation menus.
@@ -52,7 +55,7 @@ if ( ! function_exists( 'armins_advanced_theme' ) ) :
 	
 		wp_enqueue_style( 'styles', get_template_directory_uri() . '/assets/css/main.css', array(), '1.1', 'all' );
 	
-		wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/main.js', array( 'jquery' ), 1.1, true );
+		wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/main.js', NULL, 1.1, true );
 	
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
@@ -64,5 +67,6 @@ if ( ! function_exists( 'armins_advanced_theme' ) ) :
 
 endif; // armins_advanced_theme
 add_action( 'after_setup_theme', 'armins_advanced_theme' );
+
 
 

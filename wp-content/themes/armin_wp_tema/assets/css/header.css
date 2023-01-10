@@ -1,0 +1,77 @@
+
+/* Style the navigation menu */
+.topnav {
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+   .li-child  {
+    color: #1E2022;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    font-family: sans-serif;
+    margin: 0.5rem 0.5rem;
+  }
+  
+  /* Style the hamburger menu */
+  
+  .fa {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: 5rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      margin: 1rem 2rem 0rem 0rem;
+  }
+  
+  .topnav .icon {
+    display: block;
+    position: absolute;
+    color: #1E2022;
+    right: 0;
+    top: 0;
+  }
+  
+  .navbar {
+      margin-top: 1rem;
+  }
+  
+  .site-logo{
+    display: none;
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+    .fa {
+      display: none !important;
+
+    }
+  
+    .topnav #myLinks {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 1rem;
+      height: 120px;
+    }
+  
+    .site-logo {
+      display: block;
+      position: absolute;
+    }
+  
+    .li-child {
+      color: black;
+      font-weight: bold;
+      margin-right: 1rem;
+      font-family: sans-serif;
+    }
+  
+  }
+  

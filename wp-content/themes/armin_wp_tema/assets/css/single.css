@@ -1,0 +1,13 @@
+.single_post_thumbnail {
+    width: 100%;
+}
+
+.post_title {
+    font-size: 4rem;
+    margin: 5rem;
+    font-family: sans-serif;
+}
+
+.post_container > p {
+    margin: 5rem;
+}

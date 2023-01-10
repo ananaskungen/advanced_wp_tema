@@ -1,4 +1,23 @@
+/* Navigation */
 @import url(../css/header.css);
-@import url(../css/hero.css);
-
 @import url(../css/footer.css);
+
+/* Sections */
+@import url(../css/hero.css);
+@import url(../css/cta.css);
+@import url(../css/newsletter.css);
+
+/* Pages */
+@import url(../css/latest.css);
+@import url(../css/gallery.css);
+@import url(../css/single.css);
+@import url(../css/about.css);
+@import url(../css/contact.css);
+
+
+
+/* General CSS Rules */
+* {
+    margin: 0px;
+    padding: 0px;
+  }
