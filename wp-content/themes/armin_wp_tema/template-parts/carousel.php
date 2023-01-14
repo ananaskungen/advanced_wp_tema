@@ -1,6 +1,6 @@
 <div class="cta-text-section">
     <h1>Latest</h1>
-    <a class="cta_archive_link" href="/archive">See All</a>
+    <a class="cta_archive_link" href="/latest">See All</a>
 </div>
 
 
@@ -25,8 +25,9 @@ if ( have_posts() ) {
             if ( has_post_thumbnail() ) { 
             the_post_thumbnail('large', [ 'class' => 'latest_post_thumbnail' ]); 
             }
-            the_excerpt();
-        ?>
+            ?>
+            <p class="the_excerpt"> <?php the_excerpt(); ?> </p>
+        
         <a class="read_more_link" href="<?php the_permalink(); ?>"><h2 class="read_more_card">Read More</h2></a>
     </div>
     <?php

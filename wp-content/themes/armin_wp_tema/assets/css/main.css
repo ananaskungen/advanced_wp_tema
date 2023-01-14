@@ -4,7 +4,7 @@
 
 /* Sections */
 @import url(../css/hero.css);
-@import url(../css/cta.css);
+@import url(../css/carousel.css);
 @import url(../css/newsletter.css);
 
 /* Pages */
@@ -20,4 +20,10 @@
 * {
     margin: 0px;
     padding: 0px;
+  }
+
+
+  body { 
+    max-width: 1600px; 
+    margin: 0 auto; 
   }

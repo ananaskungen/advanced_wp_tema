@@ -1,19 +1,16 @@
 .hero_section {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    position: relative;
 }
 
 .hero_container {
     position: absolute;
-    margin-top: 10rem;
+    top: 50%;
+    bottom: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 75%;
-    text-align: center;
     align-items: center;
-
 }
 
 .hero_title {
@@ -21,6 +18,7 @@
     justify-content: center;
     color: #f4f3f4;
     font-size: 5rem;
+    text-align: center;
     
 }
 
@@ -34,6 +32,7 @@
     color: #f4f3f4;
     text-align: center;
     font-family: sans-serif;
+    margin-top: 2rem;
 }
 
 .hero_btn {
@@ -43,7 +42,7 @@
     align-items: center;
     padding: 18px 24px 22px 24px;
     gap: 24px;
-    margin: 3rem 13.7rem 0rem 13.7rem;
+    margin: 3rem 0rem;
     width: 300px;
     font-size: 2rem;
     font-weight: bold;
@@ -61,7 +60,7 @@
 .attachment-thumbnail {
     width: 100%;
     text-align: center;
-    height: 1200px;
+    height: 1600px;
     color: white;
     overflow: hidden;
     background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url("https://wordpress.test/wp-content/themes/armin_wp_tema/assets/images/hero.jpg");  /* Chrome 10-25, Safari 5.1-6 */
@@ -73,6 +72,10 @@
 @media screen and (min-width: 981px) {
     .hero_title {
             text-align: center;
+    }
+
+    .hero_desc {
+      width: 40%;
     }
 
 }

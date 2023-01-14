@@ -11,3 +11,18 @@
 .post_container > p {
     margin: 5rem;
 }
+
+.back_button_container {
+    display: flex;
+    justify-content: end;
+    margin: 3rem 0rem;
+}
+
+.back_button {
+    color: #1e2022;
+    font-size: 2rem;
+    font-family: sans-serif;
+    border: 1px solid #1e2022;
+    text-decoration: none;
+    padding: 1rem 4rem;
+}

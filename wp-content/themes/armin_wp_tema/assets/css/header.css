@@ -24,18 +24,19 @@
   .fa {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
-      font-size: 5rem;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       margin: 1rem 2rem 0rem 0rem;
+      position: absolute;
   }
   
   .topnav .icon {
-    display: block;
-    position: absolute;
-    color: #1E2022;
-    right: 0;
-    top: 0;
+    display: flex;
+    position: relative;
+    color: black;
+    font-size: 4rem;
+    justify-content: end;
+    height: 100px;
   }
   
   .navbar {
@@ -71,6 +72,16 @@
       font-weight: bold;
       margin-right: 1rem;
       font-family: sans-serif;
+    }
+
+
+    .topnav .icon {
+      display: flex;
+      position: relative;
+      color: black;
+      font-size: 4rem;
+      justify-content: end;
+      height: 0px;
     }
   
   }

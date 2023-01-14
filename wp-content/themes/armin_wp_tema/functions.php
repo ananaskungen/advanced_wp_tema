@@ -65,6 +65,7 @@ if ( ! function_exists( 'armins_advanced_theme' ) ) :
 
 
 
+
 endif; // armins_advanced_theme
 add_action( 'after_setup_theme', 'armins_advanced_theme' );
 

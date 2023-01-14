@@ -2,11 +2,11 @@
     border-bottom: 5px solid #1e2022;
     display: flex;
     justify-content: space-between;
-    margin: 3rem 5rem 10rem 5rem;
+    margin: 3rem 5rem 3rem 5rem;
 }
 
 .post_section {
-    margin: 3rem 5rem 0rem 5rem;
+    margin: 0rem 5rem 0rem 5rem;
 }
 
 .card {
@@ -33,6 +33,7 @@
     border: 2.5px solid black;
     width: 150px;
     padding: 1rem;
+    font-family: sans-serif;
 }
 
 .read_more_link {
@@ -40,13 +41,19 @@
     text-decoration: none;
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 }
 
-@media screen and (min-width: 980px) {
-  
+
+.card > p {
+    margin-top: 1rem;
+    font-family: sans-serif;
+}
+
+
+@media screen and (min-width: 1400px) {
     .post_section {
         display: flex;
-        margin: 3rem 5rem 10rem 5rem;
     }
 
     .card {
@@ -60,6 +67,11 @@
         height: 500px;
         width: 100%;
     }
+
+}
+
+@media screen and (min-width: 980px) {
+  
 
 
 }
