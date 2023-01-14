@@ -34,6 +34,19 @@
 }
 
 
+.pagination_container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.page-numbers {
+    color: #1e2022;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
 
 @media screen and (max-width: 900px) {
     .archive_read_more_link {
